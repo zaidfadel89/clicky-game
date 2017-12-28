@@ -21,8 +21,15 @@ class App extends Component {
   // Map over this.state.cards and render a Card component for each card object
   render() {
     return (
+      <div className="App">
+        <header className="App-header">
+          <h1 className="App-title">The Clickster</h1>
+          <p className="App-intro">
+            Try not to click the same image twice!
+          </p>
+        </header>
       <Wrapper>
-        <Nav>Clicky Game</Nav>
+        <Nav></Nav>
         {this.state.cards.map(card => (
           <Card
             id={card.id}
@@ -31,6 +38,7 @@ class App extends Component {
           />
         ))}
       </Wrapper>
+    </div>
     );
   }
 }
