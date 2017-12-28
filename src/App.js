@@ -11,7 +11,7 @@ class App extends Component {
     cards
   };
 
-  removecard = id => {
+  clickcard = id => {
     // Filter this.state.cards for cards with an id not equal to the id being removed
     const cards = this.state.cards.filter(card => card.id !== id);
     // Set this.state.cards equal to the new cards array
@@ -29,7 +29,6 @@ class App extends Component {
           </p>
         </header>
       <Wrapper>
-        <Nav></Nav>
         {this.state.cards.map(card => (
           <Card
             id={card.id}
