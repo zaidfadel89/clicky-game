@@ -1,19 +1,48 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Card from "./components/Card";
+import Wrapper from "./components/Wrapper";
+import Nav from "./components/Nav";
+import pups from "./cards.json";
+import "./App.css";
 
 class App extends Component {
+  // Setting this.state.cards to the cards json array
+  state = {
+    pups
+  };
+
+
+  shuffleScoreCard = id => {
+      for (let i = pups.length - 1; i > 0; i--) {
+          let j = Math.floor(Math.random() * (i + 1));
+          [pups[i], pups[j]] = [pups[j], pups[i]];
+      }
+      this.setState({ pups });
+      console.log(pups);
+  }
+
+
+  // Map over this.state.cards and render a Card component for each card object
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">The Clickster</h1>
+          <p className="App-intro">
+            Try not to click the same image twice!
+          </p>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Wrapper>
+        {this.state.pups.map(puppy => (
+          <Card
+            shuffleScoreCard={this.shuffleScoreCard}
+            id={puppy.id}
+            key={puppy.id}
+            image={puppy.image}
+          />
+        ))}
+      </Wrapper>
+    </div>
     );
   }
 }
