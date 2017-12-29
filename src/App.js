@@ -11,12 +11,16 @@ class App extends Component {
     pups
   };
 
+
   shuffleScoreCard = id => {
-    // Filter this.state.cards for cards with an id not equal to the id being removed
-    const pups = this.state.pups.filter(puppy => puppy.id !== id);
-    // Set this.state.cards equal to the new cards array
-    this.setState({ pups });
-  };
+      for (let i = pups.length - 1; i > 0; i--) {
+          let j = Math.floor(Math.random() * (i + 1));
+          [pups[i], pups[j]] = [pups[j], pups[i]];
+      }
+      this.setState({ pups });
+      console.log(pups);
+  }
+
 
   // Map over this.state.cards and render a Card component for each card object
   render() {
