@@ -11,7 +11,7 @@ class App extends Component {
     pups
   };
 
-
+//shuffle the pup cards in the browser when clicked
   shuffleScoreCard = id => {
       for (let i = pups.length - 1; i > 0; i--) {
           let j = Math.floor(Math.random() * (i + 1));
