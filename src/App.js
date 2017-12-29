@@ -6,7 +6,7 @@ import pups from "./cards.json";
 import "./App.css";
 
 class App extends Component {
-  // Setting this.state.cards to the cards json array
+  // Setting this.state.pups to the cards json array
   state = {
     pups
   };
@@ -18,8 +18,24 @@ class App extends Component {
           [pups[i], pups[j]] = [pups[j], pups[i]];
       }
       this.setState({ pups });
-      console.log(pups);
+//the below console is coming up undefined.  Trying to figure out why
+      // console.log(this.pups[id]);
+      //each time a puppy image is clicked, checked the id to see if it's already been clicked
+    //if the puppy clicked has already been clicked return
+    //else increase score by one and reshuffle
+        // if (this.pups[id] !== pups[id]){
+        //   shuffleScoreCard();
+        // } else {
+        //   return;
+        // };
   }
+  //^^^^^this if statement isn't working
+
+
+
+
+
+
 
 
   // Map over this.state.cards and render a Card component for each card object
