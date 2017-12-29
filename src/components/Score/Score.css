@@ -1,7 +1,7 @@
-.nav {
+.score-count {
   width: 100%;
-  text-align: left;
+  text-align: center;
   font-size: 3rem;
   color: #2A77AE;
-  margin-bottom: 50px;
+  margin: 5px;
 }
