@@ -20,8 +20,6 @@ class App extends Component {
     let clickedPuppyIds = this.state.clickedPuppyIds;
 
     if(clickedPuppyIds.includes(id)){
-
-      console.log('You Lose');
       this.setState({ clickedPuppyIds: [], score: 0, status: "Game over! You lost. Click to play again!" });
       return;
     }else{
@@ -55,18 +53,16 @@ class App extends Component {
                goal={9}
                status={this.state.status}
                />
-
-      <Wrapper>
-
-        {this.state.pups.map(puppy => (
-          <Card
-            shuffleScoreCard={this.shuffleScoreCard}
-            id={puppy.id}
-            key={puppy.id}
-            image={puppy.image}
-          />
-        ))}
-      </Wrapper>
+        <Wrapper>
+          {this.state.pups.map(puppy => (
+            <Card
+              shuffleScoreCard={this.shuffleScoreCard}
+              id={puppy.id}
+              key={puppy.id}
+              image={puppy.image}
+            />
+          ))}
+        </Wrapper>
     </div>
     );
   }
