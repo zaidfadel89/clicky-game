@@ -26,7 +26,7 @@ class App extends Component {
       clickedPuppyIds.push(id)
 
       if(clickedPuppyIds.length === 9){
-        this.setState({status: "You Won! Great Job, Smartie! Click to play again!"});
+        this.setState({score: 9, status: "You Won! Great Job, Smartie! Click to play again!", clickedPuppyIds: []});
         console.log('You Win');
         return;
       }
