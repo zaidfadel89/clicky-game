@@ -20,7 +20,7 @@ class App extends Component {
     let clickedPuppyIds = this.state.clickedPuppyIds;
 
     if(clickedPuppyIds.includes(id)){
-      this.setState({ clickedPuppyIds: [], score: 0, status: "Game over! You lost. Click to play again!" });
+      this.setState({ clickedPuppyIds: [], score: 0, status:  "Game Over! You lost. Click to play again!" });
       return;
     }else{
       clickedPuppyIds.push(id)
@@ -28,6 +28,7 @@ class App extends Component {
       if(clickedPuppyIds.length === 9){
         this.setState({status: "You Won! Great Job, Smartie! Click to play again!"});
         console.log('You Win');
+        return;
       }
 
       this.setState({ pups, clickedPuppyIds, score: clickedPuppyIds.length, status: " " });
