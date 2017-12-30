@@ -10,7 +10,9 @@ class App extends Component {
   state = {
     pups,
     clickedPuppyIds: [],
-    score: 0
+    score: 0,
+    goal: 9,
+    status: ""
   };
 
   //shuffle the pup cards in the browser when clicked
@@ -18,17 +20,17 @@ class App extends Component {
     let clickedPuppyIds = this.state.clickedPuppyIds;
 
     if(clickedPuppyIds.includes(id)){
-      console.log('You Lose');
-      this.setState({ clickedPuppyIds: [], score: 0 });
+      this.setState({ clickedPuppyIds: [], score: 0, status: "Game over! You lost. Click to play again!" });
       return;
     }else{
       clickedPuppyIds.push(id)
 
       if(clickedPuppyIds.length === 9){
+        this.setState({status: "You Won! Great Job, Smartie! Click to play again!"});
         console.log('You Win');
       }
 
-      this.setState({ pups, clickedPuppyIds, score: clickedPuppyIds.length });
+      this.setState({ pups, clickedPuppyIds, score: clickedPuppyIds.length, status: " " });
 
       for (let i = pups.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
@@ -48,17 +50,19 @@ class App extends Component {
           </p>
         </header>
         <Score total={this.state.score}
-               goal={9}/>
-      <Wrapper>
-        {this.state.pups.map(puppy => (
-          <Card
-            shuffleScoreCard={this.shuffleScoreCard}
-            id={puppy.id}
-            key={puppy.id}
-            image={puppy.image}
-          />
-        ))}
-      </Wrapper>
+               goal={9}
+               status={this.state.status}
+               />
+        <Wrapper>
+          {this.state.pups.map(puppy => (
+            <Card
+              shuffleScoreCard={this.shuffleScoreCard}
+              id={puppy.id}
+              key={puppy.id}
+              image={puppy.image}
+            />
+          ))}
+        </Wrapper>
     </div>
     );
   }
