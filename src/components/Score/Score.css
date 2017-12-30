@@ -1,7 +1,29 @@
-.score-count {
+/* .score-count {
   width: 100%;
   text-align: center;
   font-size: 3rem;
   color: #2A77AE;
   margin: 5px;
+} */
+
+
+.gameScore {
+  text-align: center;
+  height: 70px;
+  position: relative;
+  line-height: 1em;
+  padding: 0;
+  margin: auto;
+}
+
+h1 {
+  padding: 0;
+  margin: 3px;
+}
+
+h3 {
+  margin: 7px;
+}
+h3.goal {
+  color: darkgray;
 }
