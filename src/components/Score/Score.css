@@ -4,17 +4,19 @@
   position: relative;
   line-height: 1em;
   padding: 0;
-  margin: auto;
+  margin: 0;
 }
 div.gameScore {
 
 }
 
-h2.score {
+h3.score {
   margin-top: 5px;
   padding: 0;
+  font-weight: 600;
 }
 h3.status{
   margin: 0;
   padding: 0;
+  color: red;
 }
