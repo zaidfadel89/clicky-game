@@ -11,7 +11,7 @@ class App extends Component {
     pups,
     clickedPuppyIds: [],
     score: 0,
-    goal: 9,
+    goal: 8,
     status: ""
   };
 
@@ -26,7 +26,7 @@ class App extends Component {
       clickedPuppyIds.push(id)
 
       if(clickedPuppyIds.length === 9){
-        this.setState({score: 9, status: "You Won! Great Job, Smartie! Click to play again!", clickedPuppyIds: []});
+        this.setState({score: 8, status: "You Won! Great Job, Smartie! Click to play again!", clickedPuppyIds: []});
         console.log('You Win');
         return;
       }
@@ -51,7 +51,7 @@ class App extends Component {
           </p>
         </header>
         <Score total={this.state.score}
-               goal={9}
+               goal={8}
                status={this.state.status}
                />
         <Wrapper>
@@ -66,7 +66,7 @@ class App extends Component {
         </Wrapper>
         <footer>
           <p>Designed and built by Heather Mathies. You can find the 
-          code<a href="https://github.com/hmathies/Clicky-Game" target="_blank" rel="noopener"> here</a>.</p>
+          code<a href="https://github.com/hmathies/Clicky-Game" target="_blank" rel="noopener noreferrer"> here</a>.</p>
         </footer>
     </div>
     );

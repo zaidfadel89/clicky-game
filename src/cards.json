@@ -9,7 +9,7 @@
   {
     "id": 3,
 
-    "image": "https://images.pexels.com/photos/52997/pet-dog-puppy-the-shy-52997.jpeg?h=350&auto=compress&cs=tinysrgb"
+    "image": "https://images.pexels.com/photos/59988/dog-puppy-animal-portrait-small-dog-59988.jpeg?h=350&auto=compress&cs=tinysrgb"
   },
   {
     "id": 4,
@@ -33,9 +33,5 @@
     "id": 8,
     "image": "https://images.pexels.com/photos/434046/pexels-photo-434046.jpeg?h=350&auto=compress&cs=tinysrgb"
 
-  },
-  {
-    "id": 9,
-    "image": "https://images.pexels.com/photos/59988/dog-puppy-animal-portrait-small-dog-59988.jpeg?h=350&auto=compress&cs=tinysrgb"
   }
 ]
