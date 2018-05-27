@@ -25,7 +25,7 @@ class App extends Component {
     }else{
       clickedPuppyIds.push(id)
 
-      if(clickedPuppyIds.length === 9){
+      if(clickedPuppyIds.length === 8){
         this.setState({score: 8, status: "You Won! Great Job, Smartie! Click to play again!", clickedPuppyIds: []});
         console.log('You Win');
         return;
@@ -65,7 +65,7 @@ class App extends Component {
           ))}
         </Wrapper>
         <footer>
-          <p>Designed and built by Heather Mathies. You can find the 
+          <p>Designed and built by Heather Mathies. You can find the
           code<a href="https://github.com/hmathies/Clicky-Game" target="_blank" rel="noopener noreferrer"> here</a>.</p>
         </footer>
     </div>
