@@ -9,6 +9,7 @@
 <ul>
   <li>React.js</li>
   <li>Bootstrap</li>
+   <li>Node Js</li>
 </ul>
 <img width="1434" alt="Screen Shot 2019-11-14 at 9 05 15 PM" src="https://user-images.githubusercontent.com/25970156/68913924-859a8400-0722-11ea-901d-72d13d701348.png">
 
