@@ -6,17 +6,18 @@
   padding: 0;
   margin: 0;
 }
-div.gameScore {
-
-}
 
 h3.score {
   margin-top: 5px;
   padding: 0;
   font-weight: 600;
 }
-h3.status{
+h3.status {
   margin: 0;
   padding: 0;
-  color: red;
+  color: rgb(255, 8, 0);
+}
+.score {
+  color: rgb(130, 118, 238);
+  text-shadow: -1px 0 rgb(7, 233, 7), 0 1px black, 1px 0 black, 0 -1px black;
 }
