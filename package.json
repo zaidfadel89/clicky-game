@@ -10,7 +10,7 @@
     "react-scripts": "1.0.17"
   },
   "scripts": {
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -20,5 +20,8 @@
   "description": "Click Here [Demo](https://shielded-meadow-37885.herokuapp.com/)",
   "main": "index.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
 }
