@@ -1,5 +1,6 @@
 {
   "name": "clicky",
+  "homepage": "https://zaidfadel89.github.io/ClickyGame_build_with_ReactJS",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,9 +10,15 @@
     "react-scripts": "1.0.17"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "Click Here [Demo](https://shielded-meadow-37885.herokuapp.com/)",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
