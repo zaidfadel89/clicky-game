@@ -1,6 +1,13 @@
 {
-  "main.css": "static/css/main.de0f444d.css",
-  "main.css.map": "static/css/main.de0f444d.css.map",
-  "main.js": "static/js/main.21390ffb.js",
-  "main.js.map": "static/js/main.21390ffb.js.map"
+  "files": {
+    "main.css": "/ClickyGame_build_with_ReactJS/static/css/main.d87061c5.css",
+    "main.js": "/ClickyGame_build_with_ReactJS/static/js/main.b04353be.js",
+    "index.html": "/ClickyGame_build_with_ReactJS/index.html",
+    "main.d87061c5.css.map": "/ClickyGame_build_with_ReactJS/static/css/main.d87061c5.css.map",
+    "main.b04353be.js.map": "/ClickyGame_build_with_ReactJS/static/js/main.b04353be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d87061c5.css",
+    "static/js/main.b04353be.js"
+  ]
 }
